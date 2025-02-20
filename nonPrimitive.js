@@ -9,3 +9,7 @@ let user = {
     console.log(user)
 
     console.log(user, isMarried)
+
+
+    //math object
+    
