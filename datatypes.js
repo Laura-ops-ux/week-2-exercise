@@ -14,3 +14,23 @@
 //array means a list
 //function
 //object, date
+// Declaring a string variable
+
+
+
+
+5.1
+let favoriteAnimationMovie = "Migration"
+let isCodingAwesome = true;
+let unknownValue;
+let nodata = null;
+
+5.2
+console.log("The datatype of favoriteAnimationMovies  is: "+ typeof(favoriteAnimationMovie))
+console.log(favoriteAnimationMovie) //D
+console.log("The datatype of isCodingAwesome is: "+ typeof(isCodingAwesome))
+console.log("The datatype of unknownValue is: "+ typeof(unknownValue))
+console.log("The datatype of nodata is: "+ typeof(nodata))
+//OR
+console.log(typeof(favoriteAnimationMovie))
+
