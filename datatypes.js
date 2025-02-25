@@ -34,3 +34,22 @@ console.log("The datatype of nodata is: "+ typeof(nodata))
 //OR
 console.log(typeof(favoriteAnimationMovie))
 
+//Exercise 2
+console.log(4 > 3); // True
+console.log(4 >= 3); // True
+console.log(4 < 3); // False
+console.log(4 <= 3); // False
+console.log(4 == 4); // True
+console.log(4 === 4); // True
+console.log(4 != 4); // False  //exclamation shows is not equal to
+console.log(4 !== 4); // False
+console.log(4 != '4'); // False  //converts the quotes into a number.
+console.log(4 == '4'); // True  
+console.log(4 === '4'); // False  //if datatype and variable are the same
+console.log("There is no 'on' in both dragon and python".includes("on")); // True
+
+let myAge = 250;
+let yourAge = 25;
+
+let ageDifference = myAge - yourAge
+console.log("I am " + ageDifference + "years older than you");

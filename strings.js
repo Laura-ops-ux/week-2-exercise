@@ -36,3 +36,4 @@ console.log(discountedPrice)
 let buyerMoney =5000;
 let priceOfMaizePerKg =6000;
 consol
+

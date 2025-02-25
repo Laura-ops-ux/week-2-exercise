@@ -59,3 +59,9 @@ let sales =20
 stock =stock-sales;//preferred mostly used //same thing with next line
 stock-=sales//very important     a=a-b;
 console.log(stock-sales)         //a-=b   
+
+//Order of precedence
+//let value = 3+(4*5);
+//console.log(value);
+
+let value
