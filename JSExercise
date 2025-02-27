@@ -1,0 +1,49 @@
+// 1.Character at index 15 in '30 Days Of JavaScript' using charAt() method:
+let str = '30 Days Of JavaScript';
+console.log(str.charAt(15)); // Output: 'a'
+
+
+// 2.Character code of 'J' in '30 Days Of JavaScript' using charCodeAt() method:
+console.log(str.charCodeAt(8)); // Output: 74
+
+// 3.First occurrence of 'a' in '30 Days Of JavaScript' using indexOf():
+console.log(str.indexOf('a')); // Output: 4
+
+// 4.Last occurrence of 'a' in '30 Days Of JavaScript' using lastIndexOf():
+console.log(str.lastIndexOf('a')); // Output: 14
+
+// 5.First occurrence of the word 'because' in the sentence using indexOf():
+let sentence = 'You cannot end a sentence with because because because is a conjunction';
+console.log(sentence.indexOf('because')); // Output: 31
+
+// 6.Last occurrence of the word 'because' in the sentence using lastIndexOf():
+console.log(sentence.lastIndexOf('because')); // Output: 47
+
+// 7.First occurrence of the word 'because' in the sentence using search():
+console.log(sentence.search('because')); // Output: 31
+
+// 8.Remove trailing whitespace at the beginning and the end of the string using trim():
+let strWithWhitespace = ' 30 Days Of JavaScript ';
+console.log(strWithWhitespace.trim()); // Output: '30 Days Of JavaScript'
+
+// 1.Use startsWith() method with the string 30 Days Of JavaScript and make the result true:
+//let str = '30 Days Of JavaScript';
+//console.log(str.startsWith('30')); 
+
+// 2.Use endsWith() method with the string 30 Days Of JavaScript and make the result true:
+//console.log(str.endsWith('JavaScript')); // Output: true
+
+
+// 3.Use match() method to find all the 'a's in 30 Days Of JavaScript:
+//console.log(str.match(/a/g)); // Output: ['a', 'a', 'a']
+
+
+//Use concat() to merge '30 Days of' and 'JavaScript' to a single string, 30 Days Of JavaScript:
+let part1 = '30 Days Of';
+let part2 = 'JavaScript';
+let merged = part1.concat(' ', part2); //or let result
+console.log(merged); // Output: '30 Days Of JavaScript'
+
+
+//Use repeat() method to print 30 Days Of JavaScript 2 times:
+console.log(str.repeat(2)); // Output: '30 Days Of JavaScript30 Days Of JavaScript'
