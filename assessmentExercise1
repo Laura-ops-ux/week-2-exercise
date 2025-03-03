@@ -1,0 +1,186 @@
+//Exercise 2 Slide 2
+console.log(4 > 3); // True
+console.log(4 >= 3); // True
+console.log(4 < 3); // False
+console.log(4 <= 3); // False
+console.log(4 == 4); // True
+console.log(4 === 4); // True
+console.log(4 != 4); // False  //exclamation shows is not equal to
+console.log(4 !== 4); // False
+console.log(4 != '4'); // False  //converts the quotes into a number.
+console.log(4 == '4'); // True  
+console.log(4 === '4'); // False  //if datatype and variable are the same
+console.log("There is no 'on' in both dragon and python".includes("on")); // True
+
+
+//Slide 3
+let myAge = 250;
+let yourAge = 25;
+
+let ageDifference = myAge - yourAge
+console.log("I am " + ageDifference + "years older than you");
+
+//Exercise 2 slide 4
+// 1. Declare a variable named challenge and assign it an initial value '30 Days Of JavaScript'.
+let challenge = '30 Days Of JavaScript';
+
+// 2.Print the string on the browser console using console.log()
+console.log(challenge);
+
+// 3. Print the length of the string on the browser console using console.log()
+console.log(challenge.length);
+
+// 4. Change all the string characters to capital letters using toUpperCase() method
+console.log(challenge.toUpperCase());
+
+// 5. Change all the string characters to lowercase letters using toLowerCase() method
+console.log(challenge.toLowerCase());
+
+// 6.Cut (slice) out the first word of the string using substr() or substring() method
+console.log(challenge.substring(0, 2)); // Using substring()
+console.log(challenge.substr(0, 2)); // Using substr()
+
+// 7. Slice out the phrase Days Of JavaScript from '30 Days Of JavaScript'.
+console.log(challenge.substring(3));
+
+// 8.Check if the string contains a word Script using includes() method
+console.log(challenge.includes('Script'));
+
+// 9.Split the string into an array using split() method
+console.log(challenge.split());
+
+// 10.Split the string '30 Days Of JavaScript' at the space using split() method
+console.log(challenge.split(' '));
+
+// 11. 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma and change it to an array.
+let companies = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon';
+console.log(companies.split(','));
+
+// 12. Change '30 Days Of JavaScript' to '30 Days Of Python' using replace() method.
+console.log(challenge.replace('JavaScript', 'Python'));
+
+
+//Slide 5
+// 1.Character at index 15 in '30 Days Of JavaScript' using charAt() method:
+let str = '30 Days Of JavaScript';
+console.log(str.charAt(15)); // Output: 'a'
+
+
+// 2.Character code of 'J' in '30 Days Of JavaScript' using charCodeAt() method:
+console.log(str.charCodeAt(8)); // Output: 74
+
+// 3.First occurrence of 'a' in '30 Days Of JavaScript' using indexOf():
+console.log(str.indexOf('a')); // Output: 4
+
+// 4.Last occurrence of 'a' in '30 Days Of JavaScript' using lastIndexOf():
+console.log(str.lastIndexOf('a')); // Output: 14
+
+// 5.First occurrence of the word 'because' in the sentence using indexOf():
+let sentence = 'You cannot end a sentence with because because because is a conjunction';
+console.log(sentence.indexOf('because')); // Output: 31
+
+// 6.Last occurrence of the word 'because' in the sentence using lastIndexOf():
+console.log(sentence.lastIndexOf('because')); // Output: 47
+
+// 7.First occurrence of the word 'because' in the sentence using search():
+console.log(sentence.search('because')); // Output: 31
+
+// 8.Remove trailing whitespace at the beginning and the end of the string using trim():
+let strWithWhitespace = ' 30 Days Of JavaScript ';
+console.log(strWithWhitespace.trim()); // Output: '30 Days Of JavaScript'
+
+
+//Slide 6
+// 1.Use startsWith() method with the string 30 Days Of JavaScript and make the result true:
+let str = '30 Days Of JavaScript';
+/console.log(str.startsWith('30')); 
+
+// 2.Use endsWith() method with the string 30 Days Of JavaScript and make the result true:
+console.log(str.endsWith('JavaScript')); // Output: true
+
+
+// 3.Use match() method to find all the 'a's in 30 Days Of JavaScript:
+console.log(str.match(/a/g)); // Output: ['a', 'a', 'a']
+
+
+// 4.Use concat() to merge '30 Days of' and 'JavaScript' to a single string, 30 Days Of JavaScript:
+let part1 = '30 Days Of';
+let part2 = 'JavaScript';
+let merged = part1.concat(' ', part2); //or let result
+console.log(merged); // Output: '30 Days Of JavaScript'
+
+
+// 5.Use repeat() method to print 30 Days Of JavaScript 2 times:
+console.log(str.repeat(2)); // Output: '30 Days Of JavaScript30 Days Of JavaScript'
+
+//Slide 7
+// 1.Check if typeof '10' is exactly equal to 10 and make it exactly equal if not:
+let strNum = '10';
+let actualNum = 10;
+if (typeof strNum === typeof actualNum) {
+    console.log('They are exactly equal.');
+} else {
+    strNum = Number(strNum);
+    console.log('They were not equal, but now:', strNum);
+}
+
+// 2.Check if parseFloat('9.8') is equal to 10 and make it exactly equal if not:
+let parsedFloat = parseFloat('9.8');
+if (parsedFloat === 10) {
+    console.log('It is exactly equal to 10.');
+} else {
+    parsedFloat = 10;
+    console.log('It was not equal, but now:', parsedFloat);
+}
+
+// 3.Check if 'on' is found in both python and jargon:
+let str1 = 'python';
+let str2 = 'jargon';
+
+if (str1.includes('on') && str2.includes('on')) {
+    console.log('The substring "on" is found in both words.');
+} else {
+    console.log('The substring "on" is not found in both words.');
+}
+
+// 4.Check if 'jargon' is in the sentence I hope this course is not full of jargon.:
+let sentence = 'I hope this course is not full of jargon.';
+let wordToFind = 'jargon';
+
+if (sentence.includes(wordToFind)) {
+    console.log('The word "jargon" is in the sentence.');
+} else {
+    console.log('The word "jargon" is not in the sentence.');
+}
+
+// 5.Generate a random number between 0 and 100 inclusively:
+let randomNum1 = Math.floor(Math.random() * 101);
+console.log(randomNum1);
+
+// 6.Generate a random number between 50 and 100 inclusively:
+let randomNum2 = Math.floor(Math.random() * 51) + 50;
+console.log(randomNum2);
+
+// 7.Generate a random number between 0 and 255 inclusively:
+let randomNum3 = Math.floor(Math.random() * 256);
+console.log(randomNum3);
+
+// 8.Access the 'JavaScript' string characters using a random number:
+let jsString = 'JavaScript';
+let randomIndex = Math.floor(Math.random() * jsString.length);
+console.log(jsString[randomIndex]);
+
+//Slide 8
+// 1.
+console.log('1\t1\t1\t1\t1');
+console.log('2\t1\t2\t4\t8');
+console.log('3\t1\t3\t9\t27');
+console.log('4\t1\t4\t16\t64');
+console.log('5\t1\t5\t25\t125');
+
+// 2.
+let sentence = 'You cannot end a sentence with because because because is a conjunction';
+let phraseToSlice = sentence.substr(31, 23); // Start at index 31, slice 23 characters
+
+console.log(phraseToSlice); // Outputs: 'because because because'
+

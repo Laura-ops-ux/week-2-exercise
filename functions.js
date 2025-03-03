@@ -32,3 +32,13 @@ function calculateTotalPrice(produce, pricePerKg, quantity) {
   calculateTotalPrice("maize",3000, 5)
   calculateTotalPrice("beans",4000, 8)
   calculateTotalPrice("Cowpeas",6000, 10)
+
+  //arrow function
+  //Syntax is 
+  //()=> {
+    //}
+  let areaOfTriangle = (base, height) => {
+    let area = 0.5 * base * height
+    return area
+  }
+  console.log("The area of the triangle is: "+ areaOfTriangle(10,5))
