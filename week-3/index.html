@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="paragraph1">This is group four</p>
+    <p id="paragraph2">With Laura</p>
+    <p id="paragraph3">Ojera Charity</p>
+    <p id="paragraph4">Sarah and Faith</p>
+    <script>
+        const firstParagraph = document.querySelector("p");
+        console.log(firstParagraph)
+        let paragraph1 = document.querySelector("#paragraph1");
+        let paragraph2 = document.querySelector("#paragraph2");
+        let paragraph3 = document.querySelector("#paragraph3");
+        let paragraph4 = document.querySelector("#paragraph4");
+        console.log(paragraph1)
+        console.log(paragraph2)
+        console.log(paragraph3)
+        console.log(paragraph4)
+
+        const allParagraghs = document.querySelectorAll("p");
+        console.log(allParagraghs)
+
+        allParagraghs.forEach((paragraph, index) => {
+    console.log(`Paragraph ${index + 1}:`, paragraph.textContent);
+});
+ paragraph4.textContent = "fourth paragraph";
+ console.log(paragraph4)
+
+ //paragraphs.forEach((p, index) => { p.style.color = ["red", "blue", "green", "purple"][index]; // Different text colors p.style.backgroundColor = ["#f8d7da", "#d1ecf1", "#d4edda", "#fef3cd"][index]; // Different background colors p.style.fontFamily = "Arial, sans-serif"; // Set font family p.style.fontSize = `${14 + index * 2}px`; // Increase font size for each paragraph p.style.border = "2px solid black"; // Add a black border p.style.padding = "10px"; // Add some padding p.style.marginBottom = "10px"; // Add space between paragraphs });
+    </script>
+</body>
+</html

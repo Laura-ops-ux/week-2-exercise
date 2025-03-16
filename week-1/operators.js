@@ -64,4 +64,6 @@ console.log(stock-sales)         //a-=b
 //let value = 3+(4*5);
 //console.log(value);
 
-let value
+let salesRevenue = 0;
+salesRevenue += totalCost;
+console.log(salesRevenue);
